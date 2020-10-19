@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    user-select: none;
+    filter: saturate(75%);
+    font-size: 0.8em;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+    text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.container {
+    padding: 0 1em;
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.pt-1 {
+    padding-top: 1em;
+}
+
+.pb-1 {
+    padding-bottom: 1em;
+}
+
+.user {
+    font-size: 15px;
+    padding: 1em;
+    background-color: #eee;
+    border-radius: 1em;
+}
+
+.triggers .btn {
+    display: block;
+}
+
+.value {
+    float: right;
+}
+
+.bg-blue {
+    background-color: cornflowerblue;
+    color: #ffffff;
+}
+
+.bg-green {
+    background-color: mediumseagreen;
+    color: #ffffff;
+}
+
+.bg-orange {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.bg-red {
+    background-color: tomato;
+    color: #ffffff;
+}
+
+.bg-purple {
+    background-color: rebeccapurple;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 600px) {
+
+    #users {
+        grid-template-columns: 50% 50%;
+    }
+
+    .triggers .btn {
+        display: inline-block;
+    }
+
+}
